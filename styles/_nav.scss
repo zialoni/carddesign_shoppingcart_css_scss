@@ -1,0 +1,16 @@
+.nav{
+    @include size(1000px,0,auto,50px,$bgContainer);
+    box-shadow:0 0 3px #eee;
+    cursor:pointer;
+
+    a{
+       @extend %link; 
+       @include float(left,50px,10px);
+    }
+    i{
+        @include float(right,50px,10px);
+        &:hover{
+            color:crimson;
+        }
+    }
+}

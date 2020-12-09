@@ -1,0 +1,22 @@
+@import "./variables";
+@import "./mixin";
+@import "./btn";
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    @include size(100vw,0,auto,100vh,$bgColor);
+    @include flex()
+}
+
+.container{
+    @include size(1000px,0,auto,500px,$bgContainer);
+    margin:15px;
+    box-shadow: 0 0 3px #000;
+    @import "./nav";
+    @import "./card";
+}
